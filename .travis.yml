@@ -1,3 +1,4 @@
 language: java
-script: mvn clean install
+script: travis_wait mvn clean install
 jdk: oraclejdk7
+bundler_args: --retry 3
